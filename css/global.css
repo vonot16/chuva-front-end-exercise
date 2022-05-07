@@ -5,3 +5,29 @@
     margin: 0;
     font-size: 16px;
 }
+
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 16% 84%;
+    grid-template-rows: 68px auto auto;
+    grid-template-areas: 
+    "nav header"
+    "nav main"
+    "nav footer";
+}

@@ -50,13 +50,38 @@ nav {
 }
 
 .menu-elements ul li{
-    padding-left: 24px;
     width: 100%;
-    height: 33px;
+    height: 35px;
+    padding-top: 7px;
+    padding-left: 24px;
     border-bottom: 2px solid #E7E7E7;
     font-family: 'Quicksand';
     font-weight: 500;
     font-size: 15px;
-    cursor: pointer;
+    color: #725C5C;
 
+}
+
+.menu-elements ul li:hover{
+    background: #FDF1EB;
+}
+
+.menu-elements ul li a{
+    color: #725C5C;
+    text-decoration: none;
+}
+
+.current-page{
+    background: #FDF1EB;
+    height: 33px;
+    display: flex;
+}
+
+.current-page::before{
+    content: url("../assets/menu-rect.png");
+    height: 100%;
+    position: relative;
+    left: -24px;
+    top: -7px;
+    background-color: #725C5C;
 }

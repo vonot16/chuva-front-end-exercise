@@ -39,6 +39,7 @@ header {
     border: 1px solid #CCCCCC;
     border-radius: 3px;
     height: 34px;
+    margin-left: 110px;
 }
 
 .header-config .language select {
@@ -57,6 +58,7 @@ header {
     font-family: 'Quicksand';
     font-weight: 400;
     text-align: end;
+    margin-left: 22px;
 }
 
 .header-config .profile .personal-info #msg{

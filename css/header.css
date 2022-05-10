@@ -27,7 +27,12 @@ header {
     margin-bottom: 2px;
 }
 
-.header-config {
+.header-config{
+    display: flex;
+    align-items: center;
+}
+
+.header-config .language {
     display: flex;
     align-self: center;
     align-items: center;
@@ -36,7 +41,54 @@ header {
     height: 34px;
 }
 
-.header-config select {
+.header-config .language select {
     background-color: #FDF1EB;
     border: none;
+}
+
+.header-config .profile {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.header-config .profile .personal-info {
+    display: block;
+    font-family: 'Quicksand';
+    font-weight: 400;
+    text-align: end;
+}
+
+.header-config .profile .personal-info #msg{
+    size: 0.875rem;
+}
+
+.header-config .profile .personal-info #email{
+    margin-top: 1px;
+    size: 0.75;
+}
+
+.header-config .profile-pic {
+    background-image: url(../assets/profile-pic.png);
+    width: 30.3px;
+    height: 30.63px;
+    border-radius: 50%;
+    margin-left: 6.85px;
+    cursor: pointer;
+}
+
+.header-config .profile-pic::after {
+    content: '2';
+    min-width: 12px;
+    min-height: 12px;
+    border-radius: 10px;
+    padding-left: 3px;
+    padding-right: 3px;
+    background-color: #F85959;
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: #fff;
+    position: relative;
+    bottom: 5px;
+    right: -20px;
 }

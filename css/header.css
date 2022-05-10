@@ -1,4 +1,42 @@
-header{
-    background-color: red;
+header {
+    background-color: #FDF1EB;
     width: 100%;
+    display: flex;
+}
+
+.header-title {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 1.375rem;
+    color: #725C5C;
+    margin-top: 2px;
+}
+
+.header-subtitle {
+
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #725C5C;
+    margin-bottom: 2px;
+}
+
+.header-info {
+    margin-top: 5px;
+    margin-left: 36px;
+    margin-bottom: 2px;
+}
+
+.header-config {
+    display: flex;
+    align-self: center;
+    align-items: center;
+    border: 1px solid #CCCCCC;
+    border-radius: 3px;
+    height: 34px;
+}
+
+.header-config select {
+    background-color: #FDF1EB;
+    border: none;
 }

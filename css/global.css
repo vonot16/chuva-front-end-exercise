@@ -1,33 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap');
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-size: 16px;
-}
 
-header{
-    grid-area: header;
-}
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+    
+    .container{
+        height: 100vh;
+        width: 100vw;
+    
+        display: grid;
+        grid-template-columns: minmax(16.5%,220px) 83.5%;
+        grid-template-rows: 68px auto 10.65%;
+        grid-template-areas: 
+        "nav header"
+        "nav main"
+        "nav footer";
+    }
+    
+    nav{
+        grid-area: nav;
+    }
+    
+    header{
+        grid-area: header;
+        background-color: blue;
+    }
+    
+    main{
+        grid-area: main;
+        background-color: yellow;
+    }
+    
+    footer{
+        grid-area: footer;
+        background-color: red;
+    }
 
-nav{
-    grid-area: nav;
-}
-
-main{
-    grid-area: main;
-}
-
-footer{
-    grid-area: footer;
-}
-
-body{
-    display: grid;
-    grid-template-columns: 16% 84%;
-    grid-template-rows: 68px auto auto;
-    grid-template-areas: 
-    "nav header"
-    "nav main"
-    "nav footer";
-}
+@media (max-width: 1039px) {
+    *{
+        font-size: 14px;
+    }
+  }
